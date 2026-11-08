@@ -7,3 +7,40 @@
 
 /* Keep the approved alias readable on narrow screens. */
 .support-contact .email{overflow-wrap:anywhere}
+
+/* Quack Mayhem pre-launch showcase — uses existing approved Zippy artwork. */
+.next-game{position:relative;overflow:hidden;grid-template-columns:minmax(0,1.25fr) minmax(240px,.8fr);gap:48px;padding:56px 62px;background:radial-gradient(ellipse at 86% 22%,#234d52 0%,#16363e 34%,#12262e 75%);border-color:#44717a}
+.quack-copy{position:relative;z-index:1}
+.quack-copy h2{font-size:clamp(2.2rem,3.65vw,3.7rem);margin:20px 0 22px}
+.quack-copy .quack-lead{font-size:1.05rem;line-height:1.75;max-width:670px;color:#e1f2f1}
+.quack-facts{display:flex;flex-wrap:wrap;gap:9px;list-style:none;padding:0;margin:26px 0 23px}
+.quack-facts li{padding:7px 12px;border:1px solid #42747c;border-radius:999px;background:#193943;color:#d0eeed;font-size:.72rem;font-weight:650}
+.quack-copy .quack-extra{max-width:610px;color:#b8d3d6;font-size:.9rem;line-height:1.75}
+.quack-actions{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin-top:28px}
+.quack-button{background:var(--teal);color:#102e34;box-shadow:0 4px 0 #4c8f8c}
+.quack-button:hover{background:#b8f4ed}
+.quack-actions .text-link{font-size:.85rem;color:#d9f4f1}
+.quack-actions .text-link:hover{color:#fff}
+.quack-art{max-width:365px;justify-self:center;background:radial-gradient(circle at 50% 38%,#3d7a83,#233b47 75%);border-color:#54848a;box-shadow:0 17px 38px #0004}
+.quack-art img{aspect-ratio:1;object-fit:contain}
+.legal-links{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:10px 21px;grid-column:2;grid-row:1}
+.legal-links a{font-size:.76rem;color:var(--muted)}
+.legal-links a:hover{color:var(--gold)}
+@media(max-width:1000px){.next-game{padding:38px;gap:24px}.quack-art{max-width:290px}}
+@media(max-width:720px){.next-game{grid-template-columns:1fr;padding:28px;gap:24px}.quack-copy h2{font-size:2.4rem}.quack-copy .quack-lead{font-size:.95rem}.quack-copy .quack-extra{font-size:.85rem}.quack-facts{gap:7px;margin:22px 0}.quack-facts li{font-size:.67rem;padding:6px 10px}.quack-actions{gap:19px}.quack-art{max-width:260px}.legal-links{grid-column:1;grid-row:3;justify-content:flex-start}}
+
+.quack-media{grid-column:1/-1;min-width:0;padding-top:36px;border-top:1px solid #44717a}
+.quack-media .trailer-layout{grid-template-columns:minmax(0,1.8fr) minmax(0,1fr)}
+.quack-media .trailer-copy .eyebrow{color:var(--teal)}
+.quack-media .video-frame:focus-within{outline:3px solid var(--teal);outline-offset:4px}
+.quack-gallery{grid-template-columns:repeat(6,minmax(0,1fr))}
+.quack-gallery .shot{grid-column:span 2}
+.quack-gallery .shot-wide{grid-column:span 4}
+.quack-gallery .shot:nth-child(n+4){grid-column:span 3}
+@media(max-width:720px){
+  .quack-media{padding-top:24px}
+  .quack-media .trailer-layout{grid-template-columns:minmax(0,1fr);gap:18px}
+  .quack-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .quack-gallery .shot,.quack-gallery .shot:nth-child(n+4){grid-column:auto}
+  .quack-gallery .shot-wide{grid-column:1/-1}
+}
